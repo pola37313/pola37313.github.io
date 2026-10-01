@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DaCar Service — Автомайстерня та автосервіс у Чернівцях</title>
+  <meta name="description" content="Комплексний автосервіс у Чернівцях (вул. Чернівецька, 46). Прозорий ремонт, діагностика, обслуговування. Зв'язок у Viber, WhatsApp, Telegram.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-[#0d0f14] text-[#f8f9fa] font-sans selection:bg-[#e63946] selection:text-white">
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div>
+          <span class="text-xl font-extrabold tracking-wider text-white">DACAR SERVICE</span>
+          <span class="block text-[10px] text-[#9ca3af] uppercase tracking-widest font-semibold">Автомайстерня • Чернівці</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+        <a href="index.html" class="text-[#e63946] font-semibold transition">Головна</a>
+        <a href="services.html" class="text-[#9ca3af] hover:text-white transition">Послуги та ціни</a>
+        <a href="about.html" class="text-[#9ca3af] hover:text-white transition">Про нас</a>
+        <a href="contacts.html" class="text-[#9ca3af] hover:text-white transition">Контакти</a>
+      </nav>
+
+      <!-- Right Action -->
+      <div class="hidden lg:flex items-center gap-4">
+        <div class="flex items-center gap-3 text-xs text-[#9ca3af]">
+          <a href="viber://chat?number=%2B380979034777" class="hover:text-[#7360f2] transition text-base"><i class="fa-brands fa-viber"></i></a>
+          <a href="https://wa.me/380979034777" class="hover:text-[#25d366] transition text-base"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://t.me/+380979034777" class="hover:text-[#0088cc] transition text-base"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <a href="tel:+380979034777" class="flex items-center gap-2 text-sm font-bold text-white hover:text-[#ff4d6d] transition">
+          <i class="fa-solid fa-phone text-[#e63946]"></i>
+          <span>097 903 4777</span>
+        </a>
+        <button class="open-booking-modal btn-primary text-white font-semibold px-5 py-2.5 rounded-xl text-sm">
+          Записатися на СТО
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden text-white text-2xl focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden glass-card border-t border-white/10 px-6 py-6 space-y-4">
+      <a href="index.html" class="block text-white font-medium">Головна</a>
+      <a href="services.html" class="block text-[#9ca3af] hover:text-white">Послуги та ціни</a>
+      <a href="about.html" class="block text-[#9ca3af] hover:text-white">Про нас</a>
+      <a href="contacts.html" class="block text-[#9ca3af] hover:text-white">Контакти</a>
+      <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+        <div class="flex items-center gap-4 text-white text-lg">
+          <a href="viber://chat?number=%2B380979034777"><i class="fa-brands fa-viber"></i></a>
+          <a href="https://wa.me/380979034777"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://t.me/+380979034777"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <a href="tel:+380979034777" class="text-sm font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-phone text-[#e63946]"></i> 097 903 4777
+        </a>
+        <button class="open-booking-modal btn-primary text-white font-semibold py-3 rounded-xl text-center text-sm">
+          Записатися на СТО
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-20 pb-12 lg:pt-28 lg:pb-16 overflow-hidden">
+    <div class="absolute inset-0 z-0 overflow-hidden flex items-center justify-center">
+      <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-50 scale-105">
+        <source src="./videos/hero.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0d0f14]/90 via-[#0d0f14]/70 to-[#0d0f14]/50 z-0"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+          Професійний автосервіс <span class="gradient-text">DaCar Service</span> у Чернівцях
+        </h1>
+        <p class="text-lg text-[#9ca3af] mb-8 leading-relaxed">
+          Якісний ремонт, діагностика та обслуговування вашого автомобіля за адресою вул. Чернівецька, 46. Професійне обладнання та чесні ціни.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
+          <button class="open-booking-modal btn-primary text-white font-bold px-8 py-4 rounded-xl text-base text-center shadow-lg shadow-[#e63946]/40">
+            Записатися на діагностику
+          </button>
+          <a href="services.html" class="glass-card hover:bg-white/5 text-white font-semibold px-8 py-4 rounded-xl text-center border border-white/10 transition">
+            Переглянути послуги та ціни
+          </a>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="grid grid-cols-3 gap-6 mt-16 pt-12 border-t border-white/10">
+          <div>
+            <div class="text-2xl lg:text-3xl font-extrabold text-white">вул. Чернівецька 46</div>
+            <div class="text-xs text-[#9ca3af] mt-1">Чернівці</div>
+          </div>
+          <div>
+            <div class="text-2xl lg:text-3xl font-extrabold text-[#ff4d6d]">097 903 4777</div>
+            <div class="text-xs text-[#9ca3af] mt-1">Швидкий зв'язок</div>
+          </div>
+          <div>
+            <div class="text-2xl lg:text-3xl font-extrabold text-white">Viber / WA / TG</div>
+            <div class="text-xs text-[#9ca3af] mt-1">Месенджери</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO BANNER (Instagram Special) -->
+  <section class="py-6 bg-gradient-to-r from-[#e63946]/20 via-[#161922] to-[#ff4d6d]/20 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-full badge-inst flex items-center justify-center text-white text-xl shrink-0 shadow-lg">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div>
+          <h3 class="text-base font-bold text-white">Слідкуйте за нами в Instagram!</h3>
+          <p class="text-xs text-[#9ca3af]">Дивіться процес роботи та відгуки клієнтів у нашому профілі <span class="text-[#ff4d6d] font-semibold">@dacar_service.cv</span>.</p>
+        </div>
+      </div>
+      <a href="https://instagram.com/dacar_service.cv" target="_blank" class="glass-card hover:bg-white/10 px-6 py-2.5 rounded-xl text-xs font-bold text-white border border-white/20 transition shrink-0">
+        Перейти в Instagram <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW SECTION -->
+  <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+      <div>
+        <span class="text-[#e63946] font-bold text-xs uppercase tracking-widest block mb-2">Наші послуги</span>
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-white">Повний комплекс робіт для вашого авто</h2>
+      </div>
+      <a href="services.html" class="mt-4 md:mt-0 text-sm font-semibold text-[#ff4d6d] hover:underline flex items-center gap-2">
+        Усі послуги та ціни <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="glass-card p-8 rounded-2xl flex flex-col justify-between transition group">
+        <div>
+          <div class="w-14 h-14 rounded-xl bg-[#e63946]/10 border border-[#e63946]/30 flex items-center justify-center text-[#e63946] text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-stethoscope"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Комп'ютерна діагностика</h3>
+          <p class="text-sm text-[#9ca3af] leading-relaxed mb-6">
+            Повна перевірка електронних систем, блоків управління, двигуна та трансмісії на сучасному обладнанні.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+          <span class="text-sm font-bold text-white">від 400 грн</span>
+          <button class="open-booking-modal text-xs font-semibold text-[#ff4d6d] hover:underline">Записатися</button>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="glass-card p-8 rounded-2xl flex flex-col justify-between transition group">
+        <div>
+          <div class="w-14 h-14 rounded-xl bg-[#e63946]/10 border border-[#e63946]/30 flex items-center justify-center text-[#e63946] text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Ремонт двигуна та ходової</h3>
+          <p class="text-sm text-[#9ca3af] leading-relaxed mb-6">
+            Кваліфікована перевірка підвіски, заміна гальмівних колодок, амортизаторів, капремонт двигунів будь-якої складності.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+          <span class="text-sm font-bold text-white">за кошторисом</span>
+          <button class="open-booking-modal text-xs font-semibold text-[#ff4d6d] hover:underline">Записатися</button>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="glass-card p-8 rounded-2xl flex flex-col justify-between transition group">
+        <div>
+          <div class="w-14 h-14 rounded-xl bg-[#e63946]/10 border border-[#e63946]/30 flex items-center justify-center text-[#e63946] text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-paintbrush"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Покраска та поліровка</h3>
+          <p class="text-sm text-[#9ca3af] leading-relaxed mb-6">
+            Локальна та повна покраска в професійній камері, усунення подряпин, глибока захисна поліровка кузова.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+          <span class="text-sm font-bold text-white">від 1500 грн</span>
+          <button class="open-booking-modal text-xs font-semibold text-[#ff4d6d] hover:underline">Записатися</button>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="glass-card p-8 rounded-2xl flex flex-col justify-between transition group">
+        <div>
+          <div class="w-14 h-14 rounded-xl bg-[#e63946]/10 border border-[#e63946]/30 flex items-center justify-center text-[#e63946] text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-circle-dot"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Шиномонтаж</h3>
+          <p class="text-sm text-[#9ca3af] leading-relaxed mb-6">
+            Швидка та точна заміна шин, професійне балансування коліс на сучасному обладнанні.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+          <span class="text-sm font-bold text-white">від 600 грн</span>
+          <button class="open-booking-modal text-xs font-semibold text-[#ff4d6d] hover:underline">Записатися</button>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="glass-card p-8 rounded-2xl flex flex-col justify-between transition group">
+        <div>
+          <div class="w-14 h-14 rounded-xl bg-[#e63946]/10 border border-[#e63946]/30 flex items-center justify-center text-[#e63946] text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Ендоскопія двигуна</h3>
+          <p class="text-sm text-[#9ca3af] leading-relaxed mb-6">
+            Перевірка стану циліндро-поршневої групи без розбирання двигуна. Виявлення задирів та нагару.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+          <span class="text-sm font-bold text-white">від 800 грн</span>
+          <button class="open-booking-modal text-xs font-semibold text-[#ff4d6d] hover:underline">Записатися</button>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="glass-card p-8 rounded-2xl flex flex-col justify-between transition group">
+        <div>
+          <div class="w-14 h-14 rounded-xl bg-[#e63946]/10 border border-[#e63946]/30 flex items-center justify-center text-[#e63946] text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-car-side"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Технічне обслуговування (ТО)</h3>
+          <p class="text-sm text-[#9ca3af] leading-relaxed mb-6">
+            Заміна мастила, фільтрів, свічок та повна перевірка всіх робочих рідин автомобіля.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+          <span class="text-sm font-bold text-white">від 500 грн</span>
+          <button class="open-booking-modal text-xs font-semibold text-[#ff4d6d] hover:underline">Записатися</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="py-24 bg-[#161922]/50 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-[#e63946] font-bold text-xs uppercase tracking-widest block mb-2">Наші переваги</span>
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-white">Чому автовласники довіряють DaCar Service</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="glass-card p-8 rounded-2xl">
+          <div class="text-[#e63946] text-3xl font-black mb-4">01</div>
+          <h3 class="text-xl font-bold text-white mb-3">Фіксований кошторис</h3>
+          <p class="text-sm text-[#9ca3af] leading-relaxed">
+            Жодних несподіваних платежів під час ремонту. Усі роботи та запчастини погоджуються з вами до початку робіт.
+          </p>
+        </div>
+        <div class="glass-card p-8 rounded-2xl">
+          <div class="text-[#ff4d6d] text-3xl font-black mb-4">02</div>
+          <h3 class="text-xl font-bold text-white mb-3">Професійне обладнання</h3>
+          <p class="text-sm text-[#9ca3af] leading-relaxed">
+            Використовуємо сертифікований інструмент та сучасні сканери для точного визначення несправностей з першого разу.
+          </p>
+        </div>
+        <div class="glass-card p-8 rounded-2xl">
+          <div class="text-[#e63946] text-3xl font-black mb-4">03</div>
+          <h3 class="text-xl font-bold text-white mb-3">Зручний зв'язок</h3>
+          <p class="text-sm text-[#9ca3af] leading-relaxed">
+            Завжди на зв'язку у Viber, WhatsApp, Telegram та за телефонами 097 903 4777 / 050 865 5365.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="glass-card p-12 rounded-3xl relative overflow-hidden border border-[#e63946]/30 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#e63946]/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div>
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4">Потрібна консультація чи діагностика?</h2>
+        <p class="text-[#9ca3af] max-w-xl text-sm leading-relaxed">
+          Завітайте до нас за адресою вул. Чернівецька, 46 у Чернівцях або зв'яжіться у зручному месенджері.
+        </p>
+      </div>
+      <button class="open-booking-modal btn-primary text-white font-bold px-8 py-4 rounded-xl text-base shrink-0 shadow-lg shadow-[#e63946]/40">
+        Записатися на СТО
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0d0f14] border-t border-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="text-lg font-extrabold tracking-wider text-white">DACAR SERVICE</span>
+          </div>
+          <p class="text-xs text-[#9ca3af] leading-relaxed">
+            Професійний автосервіс та майстерня у Чернівцях. вул. Чернівецька, 46.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Навігація</h4>
+          <ul class="space-y-2 text-sm text-[#9ca3af]">
+            <li><a href="index.html" class="hover:text-white transition">Головна</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Послуги та ціни</a></li>
+            <li><a href="about.html" class="hover:text-white transition">Про майстерню</a></li>
+            <li><a href="contacts.html" class="hover:text-white transition">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Контакти</h4>
+          <ul class="space-y-2 text-sm text-[#9ca3af]">
+            <li><i class="fa-solid fa-location-dot text-[#e63946] mr-2"></i> вул. Чернівецька, 46, Чернівці</li>
+            <li><i class="fa-solid fa-phone text-[#e63946] mr-2"></i> 097 903 4777 / 050 865 5365</li>
+            <li class="flex items-center gap-3 pt-2">
+              <a href="viber://chat?number=%2B380979034777" class="hover:text-[#7360f2] transition text-base"><i class="fa-brands fa-viber"></i> Viber</a>
+              <a href="https://wa.me/380979034777" class="hover:text-[#25d366] transition text-base"><i class="fa-brands fa-whatsapp"></i> WA</a>
+              <a href="https://t.me/+380979034777" class="hover:text-[#0088cc] transition text-base"><i class="fa-brands fa-telegram"></i> TG</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Instagram</h4>
+          <p class="text-xs text-[#9ca3af] mb-4">Слідкуйте за нашими роботами в Instagram.</p>
+          <a href="https://instagram.com/dacar_service.cv" target="_blank" class="inline-flex items-center gap-2 badge-inst text-white px-4 py-2 rounded-xl text-xs font-bold shadow">
+            <i class="fa-brands fa-instagram text-base"></i> @dacar_service.cv
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-[#9ca3af]">
+        <p>&copy; 2026 DaCar Service. Всі права захищені.</p>
+        <p class="mt-2 sm:mt-0">Автомайстерня • Чернівці</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-md p-4">
+    <div class="glass-card max-w-md w-full p-8 rounded-3xl border border-white/10 relative shadow-2xl">
+      <button id="closeModalBtn" class="absolute top-6 right-6 text-[#9ca3af] hover:text-white text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="mb-6">
+        <span class="text-[#e63946] font-bold text-xs uppercase tracking-widest block mb-1">Швидкий запис</span>
+        <h3 class="text-2xl font-extrabold text-white">Записатися на обслуговування</h3>
+        <p class="text-xs text-[#9ca3af] mt-1">Заповніть форму, і ми зв'яжемося з вами найближчим часом.</p>
+      </div>
+
+      <form id="bookingForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-[#9ca3af] mb-1">Ваше ім'я</label>
+          <input type="text" required placeholder="Олександр" class="w-full bg-[#0d0f14] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-[#e63946] focus:outline-none transition">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-[#9ca3af] mb-1">Номер телефону</label>
+          <input type="tel" required placeholder="097 903 4777" class="w-full bg-[#0d0f14] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-[#e63946] focus:outline-none transition">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-[#9ca3af] mb-1">Бажана послуга</label>
+          <select class="w-full bg-[#0d0f14] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-[#e63946] focus:outline-none transition">
+            <option>Комп'ютерна діагностика</option>
+            <option>Ремонт ходової / двигуна</option>
+            <option>Покраска та поліровка</option>
+            <option>Шиномонтаж</option>
+            <option>Ендоскопія двигуна</option>
+            <option>Технічне обслуговування (ТО)</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full btn-primary text-white font-bold py-3.5 rounded-xl text-sm shadow-lg shadow-[#e63946]/30 mt-2">
+          Записатися на СТО
+        </button>
+      </form>
+
+      <div id="formSuccess" class="hidden text-center py-8 space-y-4">
+        <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mx-auto border border-emerald-500/30">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h4 class="text-xl font-bold text-white">Заявку успішно прийнято!</h4>
+        <p class="text-xs text-[#9ca3af]">Наш майстер зателефонує вам найближчим часом для підтвердження деталей запису.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

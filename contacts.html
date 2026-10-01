@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти — DaCar Service Чернівці</title>
+  <meta name="description" content="Контакти DaCar Service у Чернівцях (вул. Чернівецька, 46). Телефони 0979034777 / 0508655365, Viber/WhatsApp/Telegram, графік роботи.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-[#0d0f14] text-[#f8f9fa] font-sans selection:bg-[#e63946] selection:text-white">
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div>
+          <span class="text-xl font-extrabold tracking-wider text-white">DACAR SERVICE</span>
+          <span class="block text-[10px] text-[#9ca3af] uppercase tracking-widest font-semibold">Автомайстерня • Чернівці</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+        <a href="index.html" class="text-[#9ca3af] hover:text-white transition">Головна</a>
+        <a href="services.html" class="text-[#9ca3af] hover:text-white transition">Послуги та ціни</a>
+        <a href="about.html" class="text-[#9ca3af] hover:text-white transition">Про нас</a>
+        <a href="contacts.html" class="text-[#e63946] font-semibold transition">Контакти</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <div class="flex items-center gap-3 text-xs text-[#9ca3af]">
+          <a href="viber://chat?number=%2B380979034777" class="hover:text-[#7360f2] transition text-base"><i class="fa-brands fa-viber"></i></a>
+          <a href="https://wa.me/380979034777" class="hover:text-[#25d366] transition text-base"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://t.me/+380979034777" class="hover:text-[#0088cc] transition text-base"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <a href="tel:+380979034777" class="flex items-center gap-2 text-sm font-bold text-white hover:text-[#ff4d6d] transition">
+          <i class="fa-solid fa-phone text-[#e63946]"></i>
+          <span>097 903 4777</span>
+        </a>
+        <button class="open-booking-modal btn-primary text-white font-semibold px-5 py-2.5 rounded-xl text-sm">
+          Записатися на СТО
+        </button>
+      </div>
+
+      <button id="mobileMenuBtn" class="md:hidden text-white text-2xl focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden glass-card border-t border-white/10 px-6 py-6 space-y-4">
+      <a href="index.html" class="block text-[#9ca3af] hover:text-white">Головна</a>
+      <a href="services.html" class="block text-[#9ca3af] hover:text-white">Послуги та ціни</a>
+      <a href="about.html" class="block text-[#9ca3af] hover:text-white">Про нас</a>
+      <a href="contacts.html" class="block text-white font-medium">Контакти</a>
+      <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+        <div class="flex items-center gap-4 text-white text-lg">
+          <a href="viber://chat?number=%2B380979034777"><i class="fa-brands fa-viber"></i></a>
+          <a href="https://wa.me/380979034777"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://t.me/+380979034777"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <a href="tel:+380979034777" class="text-sm font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-phone text-[#e63946]"></i> 097 903 4777
+        </a>
+        <button class="open-booking-modal btn-primary text-white font-semibold py-3 rounded-xl text-center text-sm">
+          Записатися на СТО
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="relative pt-24 pb-16 lg:pt-32 lg:pb-20 overflow-hidden border-b border-white/10 bg-[#0d0f14]">
+    <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[250px] bg-gradient-to-r from-[#e63946]/25 to-[#ff4d6d]/25 blur-[120px] pointer-events-none rounded-full"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <span class="text-[#e63946] font-bold text-xs uppercase tracking-widest block mb-2">Зв'яжіться з нами</span>
+      <h1 class="text-4xl lg:text-5xl font-extrabold text-white mb-4">Контакти та розташування</h1>
+      <p class="text-base text-[#9ca3af] max-w-2xl mx-auto">
+        Чекаємо на вас за адресою вул. Чернівецька, 46 у Чернівцях. Зв'язок через месенджери та телефони.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACTС SECTION -->
+  <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      
+      <!-- Contact Info Cards -->
+      <div class="space-y-6">
+        <div class="glass-card p-8 rounded-3xl space-y-6">
+          <h3 class="text-2xl font-extrabold text-white">Наші координати</h3>
+          
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#e63946]/10 border border-[#e63946]/30 flex items-center justify-center text-[#e63946] text-xl shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="text-xs text-[#9ca3af] uppercase font-semibold mb-1">Адреса майстерні</div>
+              <div class="text-base font-bold text-white">вул. Чернівецька, 46, Чернівці, Чернівецька область, 60313</div>
+              <a href="https://maps.app.goo.gl" target="_blank" class="inline-flex items-center gap-1 text-xs text-[#ff4d6d] hover:underline mt-2">
+                Відкрити в Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#e63946]/10 border border-[#e63946]/30 flex items-center justify-center text-[#e63946] text-xl shrink-0">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <div class="text-xs text-[#9ca3af] uppercase font-semibold mb-1">Телефони для зв'язку</div>
+              <a href="tel:+380979034777" class="text-base font-bold text-white hover:text-[#ff4d6d] transition block">097 903 4777</a>
+              <a href="tel:+380508655365" class="text-base font-bold text-white hover:text-[#ff4d6d] transition block mt-1">050 865 5365</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#e63946]/10 border border-[#e63946]/30 flex items-center justify-center text-[#e63946] text-xl shrink-0">
+              <i class="fa-brands fa-telegram"></i>
+            </div>
+            <div>
+              <div class="text-xs text-[#9ca3af] uppercase font-semibold mb-1">Месенджери</div>
+              <div class="flex items-center gap-4 mt-2 text-white font-semibold text-sm">
+                <a href="viber://chat?number=%2B380979034777" class="hover:text-[#7360f2] transition flex items-center gap-1.5"><i class="fa-brands fa-viber text-lg"></i> Viber</a>
+                <a href="https://wa.me/380979034777" class="hover:text-[#25d366] transition flex items-center gap-1.5"><i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp</a>
+                <a href="https://t.me/+380979034777" class="hover:text-[#0088cc] transition flex items-center gap-1.5"><i class="fa-brands fa-telegram text-lg"></i> Telegram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#e63946]/10 border border-[#e63946]/30 flex items-center justify-center text-[#e63946] text-xl shrink-0">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+              <div class="text-xs text-[#9ca3af] uppercase font-semibold mb-1">Instagram</div>
+              <a href="https://instagram.com/dacar_service.cv" target="_blank" class="text-base font-bold text-white hover:text-[#ff4d6d] transition">@dacar_service.cv</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="open-booking-modal w-full btn-primary text-white font-bold py-4 rounded-2xl text-base shadow-lg shadow-[#e63946]/40">
+          Записатися на СТО онлайн
+        </button>
+      </div>
+
+      <!-- Map Container / Embed placeholder -->
+      <div class="glass-card p-4 rounded-3xl border border-white/10 h-[500px] flex flex-col justify-center items-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-cover bg-center opacity-40" style="background-image: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="absolute inset-0 bg-[#0d0f14]/70 z-0"></div>
+        
+        <div class="relative z-10 text-center p-8 max-w-md">
+          <div class="w-16 h-16 rounded-2xl bg-[#e63946]/20 border border-[#e63946]/40 text-[#ff4d6d] flex items-center justify-center text-2xl mx-auto mb-4 shadow-lg">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <h3 class="text-xl font-extrabold text-white mb-2">вул. Чернівецька, 46, Чернівці</h3>
+          <p class="text-xs text-[#9ca3af] mb-6">Зручний заїзд, професійне обладнання та комфортна зона для клієнтів.</p>
+          <a href="https://maps.app.goo.gl" target="_blank" class="inline-flex items-center justify-center gap-2 btn-primary text-white font-bold px-6 py-3 rounded-xl text-xs shadow-lg">
+            Відкрити на Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0d0f14] border-t border-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="text-lg font-extrabold tracking-wider text-white">DACAR SERVICE</span>
+          </div>
+          <p class="text-xs text-[#9ca3af] leading-relaxed">
+            Професійний автосервіс та майстерня у Чернівцях. вул. Чернівецька, 46.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Навігація</h4>
+          <ul class="space-y-2 text-sm text-[#9ca3af]">
+            <li><a href="index.html" class="hover:text-white transition">Головна</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Послуги та ціни</a></li>
+            <li><a href="about.html" class="hover:text-white transition">Про майстерню</a></li>
+            <li><a href="contacts.html" class="hover:text-white transition">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Контакти</h4>
+          <ul class="space-y-2 text-sm text-[#9ca3af]">
+            <li><i class="fa-solid fa-location-dot text-[#e63946] mr-2"></i> вул. Чернівецька, 46, Чернівці</li>
+            <li><i class="fa-solid fa-phone text-[#e63946] mr-2"></i> 097 903 4777 / 050 865 5365</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Instagram</h4>
+          <p class="text-xs text-[#9ca3af] mb-4">Слідкуйте за нашими роботами в Instagram.</p>
+          <a href="https://instagram.com/dacar_service.cv" target="_blank" class="inline-flex items-center gap-2 badge-inst text-white px-4 py-2 rounded-xl text-xs font-bold shadow">
+            <i class="fa-brands fa-instagram text-base"></i> @dacar_service.cv
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-[#9ca3af]">
+        <p>&copy; 2026 DaCar Service. Всі права захищені.</p>
+        <p class="mt-2 sm:mt-0">Автомайстерня • Чернівці</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-md p-4">
+    <div class="glass-card max-w-md w-full p-8 rounded-3xl border border-white/10 relative shadow-2xl">
+      <button id="closeModalBtn" class="absolute top-6 right-6 text-[#9ca3af] hover:text-white text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="mb-6">
+        <span class="text-[#e63946] font-bold text-xs uppercase tracking-widest block mb-1">Швидкий запис</span>
+        <h3 class="text-2xl font-extrabold text-white">Записатися на обслуговування</h3>
+        <p class="text-xs text-[#9ca3af] mt-1">Заповніть форму, і ми зв'яжемося з вами найближчим часом.</p>
+      </div>
+
+      <form id="bookingForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-[#9ca3af] mb-1">Ваше ім'я</label>
+          <input type="text" required placeholder="Олександр" class="w-full bg-[#0d0f14] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-[#e63946] focus:outline-none transition">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-[#9ca3af] mb-1">Номер телефону</label>
+          <input type="tel" required placeholder="097 903 4777" class="w-full bg-[#0d0f14] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-[#e63946] focus:outline-none transition">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-[#9ca3af] mb-1">Бажана послуга</label>
+          <select class="w-full bg-[#0d0f14] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-[#e63946] focus:outline-none transition">
+            <option>Комп'ютерна діагностика</option>
+            <option>Ремонт ходової / двигуна</option>
+            <option>Покраска та поліровка</option>
+            <option>Шиномонтаж</option>
+            <option>Ендоскопія двигуна</option>
+            <option>Технічне обслуговування (ТО)</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full btn-primary text-white font-bold py-3.5 rounded-xl text-sm shadow-lg shadow-[#e63946]/30 mt-2">
+          Записатися на СТО
+        </button>
+      </form>
+
+      <div id="formSuccess" class="hidden text-center py-8 space-y-4">
+        <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mx-auto border border-emerald-500/30">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h4 class="text-xl font-bold text-white">Заявку успішно прийнято!</h4>
+        <p class="text-xs text-[#9ca3af]">Наш майстер зателефонує вам найближчим часом для підтвердження деталей запису.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
